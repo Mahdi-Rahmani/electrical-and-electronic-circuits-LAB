@@ -1,0 +1,7 @@
+* source AZ4
+R_R3         0 N00152  56k  
+R_R2         N00125 N00224  10k  
+C_C2         N00152 N00125  100n  
+V_V2         N00224 0 DC 0Vdc AC 2Vac 
+C_C1         0 N00125  100n  
+R_R1         0 N00152  10k  

@@ -1,0 +1,44 @@
+
+**** 10/12/20 18:29:11 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-az1"  [ C:\Users\M R\Desktop\az madar elec\s02\s02-SCHEMATIC1-az1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "s02-SCHEMATIC1-az1.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM a 0 1 0.2 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\s02-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING s02-SCHEMATIC1.net ****
+* source S02
+R_R1         0 N00173  1k  
+V_V1         N00192 0 18
+X_R6    0 N00192 N00173 SCHEMATIC1_R6 
+
+.subckt SCHEMATIC1_R6 1 2 t  
+RT_R6         1 t {(1K*(1-a))+.001}
+RB_R6         t 2 {(1K*a)+.001}
+.ends SCHEMATIC1_R6
+
+**** RESUMING s02-SCHEMATIC1-az1.sim.cir ****
+.END
+
+ERROR -- Undefined parameter: a

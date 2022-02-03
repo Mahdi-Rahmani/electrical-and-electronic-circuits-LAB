@@ -1,0 +1,73 @@
+
+**** 11/23/20 08:38:53 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-test"  [ C:\USERS\M R\DESKTOP\AZ MADAR ELEC\6\S06\azmayesh 2\220\az2-220-SCHEMATIC1-test.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "az2-220-SCHEMATIC1-test.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 0.2ms 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\az2-220-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING az2-220-SCHEMATIC1.net ****
+* source AZ2-220
+L_L1         N00945 N01169  18m  
+V_V1         N00945 0  
++PULSE 2 -2 0 1n 1n 0.1m 0.2m
+C_C1         N01169 N00903  220p  
+R_R1         0 N00903  4.7k  
+
+**** RESUMING az2-220-SCHEMATIC1-test.sim.cir ****
+.END
+
+**** 11/23/20 08:38:53 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-test"  [ C:\USERS\M R\DESKTOP\AZ MADAR ELEC\6\S06\azmayesh 2\220\az2-220-SCHEMATIC1-test.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00903)    0.0000 (N00945)    2.0000 (N01169)    2.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .25
+

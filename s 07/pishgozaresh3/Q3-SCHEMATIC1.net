@@ -1,0 +1,5 @@
+* source Q3
+R_R1         N00093 N00109  10k  
+V_V5         N00093 0  
++PULSE 1 -1 0 1n 1n 0.5m 1m
+C_C2         0 N00109  100n   

@@ -1,0 +1,43 @@
+
+**** 11/02/20 14:24:29 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-test2"  [ C:\Users\M R\Desktop\az madar elec\s03\pish gozaresh 2\soal4\part1\level1\q4-1-SCHEMATIC1-test2.si
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "q4-1-SCHEMATIC1-test2.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\q4-1-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING q4-1-SCHEMATIC1.net ****
+* source Q4-1
+V_V2         N00183 N00280  
++SIN 0 5 150 0 0 0
+R_R1         N00183 N00222  0.18k  
+R_R2         N00222 N00280  0.18k  
+R_R3         N00280 N00222  5.6k  
+
+**** RESUMING q4-1-SCHEMATIC1-test2.sim.cir ****
+.END
+
+ERROR -- Node N00183 is floating
+ERROR -- Node N00280 is floating
+ERROR -- Node N00222 is floating

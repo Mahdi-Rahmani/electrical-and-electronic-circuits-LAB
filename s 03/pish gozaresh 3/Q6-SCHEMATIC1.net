@@ -1,0 +1,7 @@
+* source Q6
+R_R1         N00149 N00180  33  
+R_R2         N00180 N00207  33  
+R_R3         0 N00180  1k  
+V_V1         N00149 0 4.5Vdc
+R_R4         0 N00207  {a}  
+.PARAM  a=1k

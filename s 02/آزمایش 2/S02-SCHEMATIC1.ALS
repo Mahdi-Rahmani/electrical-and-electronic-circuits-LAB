@@ -1,0 +1,5 @@
+.ALIASES
+R_R1            R1(1=0 2=N00173 )
+V_V1            V1(+=N00192 -=0 )
+X_R6    R6(1=0 2=N00192 t=N00173 )
+.ENDALIASES

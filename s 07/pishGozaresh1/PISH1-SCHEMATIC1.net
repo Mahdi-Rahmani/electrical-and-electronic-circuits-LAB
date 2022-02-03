@@ -1,0 +1,4 @@
+* source PISH1
+R_R1         N00075 N00109  10k  
+V_V3         N00075 0 DC 0Vdc AC 2Vac 
+C_C2         0 N00109  100n   

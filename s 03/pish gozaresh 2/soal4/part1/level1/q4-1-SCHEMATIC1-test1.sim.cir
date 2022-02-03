@@ -1,0 +1,17 @@
+** Profile: "SCHEMATIC1-test1"  [ C:\Users\M R\Desktop\az madar elec\s03\pish gozaresh 2\soal4\part1\level1\q4-1-SCHEMATIC1-test1.sim ] 
+
+** Creating circuit file "q4-1-SCHEMATIC1-test1.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 13.3 ms 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\q4-1-SCHEMATIC1.net" 
+
+
+.END

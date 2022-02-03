@@ -1,0 +1,85 @@
+
+**** 02/07/21 18:02:31 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-tets"  [ C:\USERS\M R\DESKTOP\AZ MADAR ELEC\ELEC PROJECT\Q6\SECOND STATE\I\in-SCHEMATIC1-tets.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "in-SCHEMATIC1-tets.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 1 700m 700m
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\in-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING in-SCHEMATIC1.net ****
+* source IN
+R_R3         N00325 0  1n  
+R_R2         0 N00702  10  
+C_C1         N00591 N00491  20m  
+V_V2         N00553 0 DC 0Vdc AC 6Vac 
+L_L1         N00702 N00325  2H  
+E_E1         N02360 0 N00325 0 0.5
+R_R1         N00553 N00591  4  
+C_C2         0 N00325  25m  
+X_F1    N00491 N02360 N00702 0 SCHEMATIC1_F1 
+
+.subckt SCHEMATIC1_F1 1 2 3 4  
+F_F1         3 4 VF_F1 4
+VF_F1         1 2 0V
+.ends SCHEMATIC1_F1
+
+**** RESUMING in-SCHEMATIC1-tets.sim.cir ****
+.END
+
+**** 02/07/21 18:02:31 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-tets"  [ C:\USERS\M R\DESKTOP\AZ MADAR ELEC\ELEC PROJECT\Q6\SECOND STATE\I\in-SCHEMATIC1-tets.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00325)    0.0000 (N00491)    0.0000 (N00553)    0.0000 (N00591)    0.0000     
+
+(N00702)    0.0000 (N02360)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2         0.000E+00
+    X_F1.VF_F1   0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .03
+

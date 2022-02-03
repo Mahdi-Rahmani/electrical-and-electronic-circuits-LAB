@@ -1,0 +1,5 @@
+* source Q2_PISHGOZARESH
+R_R1         0 N00091  680  
+R_R2         0 N00091  1k  
+R_R3         N00091 0  5.6k  
+V_V1         N00091 0 3

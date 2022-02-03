@@ -1,0 +1,46 @@
+
+**** 11/02/20 16:25:07 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-test"  [ C:\Users\M R\Desktop\az madar elec\s03\pish gozaresh 3\q6-SCHEMATIC1-test.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "q6-SCHEMATIC1-test.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM a 1 1k 5 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\q6-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING q6-SCHEMATIC1.net ****
+* source Q6
+R_R1         N00149 N00180  33  
+R_R2         N00180 N00207  33  
+R_R3         0 N00180  1k  
+V_V1         N00149 0 4.5Vdc
+R_R4         0 N00207  {a}  
+.PARAM  a=1k
+
+**** RESUMING q6-SCHEMATIC1-test.sim.cir ****
+.END
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .03
+

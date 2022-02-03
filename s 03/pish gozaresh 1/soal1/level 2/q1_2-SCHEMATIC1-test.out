@@ -1,0 +1,70 @@
+
+**** 11/02/20 11:37:07 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-test"  [ C:\Users\M R\Desktop\az madar elec\s03\pish gozaresh 1\soal1\level 2\q1_2-SCHEMATIC1-test.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "q1_2-SCHEMATIC1-test.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\q1_2-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING q1_2-SCHEMATIC1.net ****
+* source Q1_2
+R_R1         N00103 N00245  0.33k  
+R_R3         0 N00245  1k  
+V_V1         N00103 0 15Vdc
+
+**** RESUMING q1_2-SCHEMATIC1-test.sim.cir ****
+.END
+
+**** 11/02/20 11:37:07 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-test"  [ C:\Users\M R\Desktop\az madar elec\s03\pish gozaresh 1\soal1\level 2\q1_2-SCHEMATIC1-test.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00103)   15.0000 (N00245)   11.2780 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.128E-02
+
+    TOTAL POWER DISSIPATION   1.69E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .17
+

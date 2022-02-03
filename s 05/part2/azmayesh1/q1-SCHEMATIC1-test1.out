@@ -1,0 +1,74 @@
+
+**** 11/09/20 03:49:01 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-test1"  [ C:\Users\M R\Desktop\az madar elec\s05\part2\azmayesh1\q1-schematic1-test1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "q1-schematic1-test1.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 40ms 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\q1-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING q1-SCHEMATIC1.net ****
+* source Q1
+V_V1         N00173 0  
++PULSE -2 2 0 1n 1n 10m 20m
+R_R1         N00173 N00227  10k  
+C_C1         0 N00227  100n  
+C_C2         N00254 N00227  100n  
+R_R2         0 N00254  10k  
+
+**** RESUMING q1-schematic1-test1.sim.cir ****
+.END
+
+**** 11/09/20 03:49:01 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-test1"  [ C:\Users\M R\Desktop\az madar elec\s05\part2\azmayesh1\q1-schematic1-test1.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00173)   -2.0000 (N00227)   -2.0000 (N00254)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .09
+

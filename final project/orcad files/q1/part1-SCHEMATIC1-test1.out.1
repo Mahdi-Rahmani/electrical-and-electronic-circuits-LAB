@@ -1,0 +1,55 @@
+
+**** 02/05/21 15:48:49 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-test1"  [ C:\USERS\M R\DESKTOP\AZ MADAR ELEC\elec project\q1\part1-SCHEMATIC1-test1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "part1-SCHEMATIC1-test1.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 7.854s 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\part1-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING part1-SCHEMATIC1.net ****
+* source PART1
+V_V1         N00553 N00287  
++SIN 0 6 0.6366 0 0 90
+R_R1         N00553 N00591  4  
+R_R2         N00287 N00618  10  
+C_C1         N00591 N00473  20m  
+C_C2         N00287 N00325  25m  
+L_L1         N00618 N00325  2  
+E_E1         N00473 N00287 N00325 N00287 0.5
+X_F1    N00618 N00287 N00473 N00287 SCHEMATIC1_F1 
+
+.subckt SCHEMATIC1_F1 1 2 3 4  
+F_F1         3 4 VF_F1 4
+VF_F1         1 2 0V
+.ends SCHEMATIC1_F1
+
+**** RESUMING part1-SCHEMATIC1-test1.sim.cir ****
+.END
+
+ERROR -- Node N00553 is floating
+ERROR -- Node N00287 is floating
+ERROR -- Node N00591 is floating
+ERROR -- Node N00618 is floating
+ERROR -- Node N00473 is floating
+ERROR -- Node N00325 is floating

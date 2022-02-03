@@ -1,0 +1,10 @@
+* source S02
+R_R1         0 N00173  1k  
+V_V1         N00192 0 18
+X_R6    0 N00192 N00173 SCHEMATIC1_R6 
+.PARAM  a=0.1
+
+.subckt SCHEMATIC1_R6 1 2 t  
+RT_R6         1 t {(1K*(1-{a}))+.001}
+RB_R6         t 2 {(1K*{a})+.001}
+.ends SCHEMATIC1_R6

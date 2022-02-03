@@ -1,0 +1,18 @@
+** Profile: "SCHEMATIC1-test"  [ C:\USERS\M R\DESKTOP\AZ MADAR ELEC\elec project\q4\part4-SCHEMATIC1-test.sim ] 
+
+** Creating circuit file "part4-SCHEMATIC1-test.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN CAP C1(a) 10m 50m 10m 
++ LIN CAP C2(b) 10m 50m 10m 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\part4-SCHEMATIC1.net" 
+
+
+.END

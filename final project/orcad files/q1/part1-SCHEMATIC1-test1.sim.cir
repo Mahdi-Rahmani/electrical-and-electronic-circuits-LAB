@@ -1,0 +1,17 @@
+** Profile: "SCHEMATIC1-test1"  [ C:\Users\M R\Desktop\az madar elec\elec project\orcad files\q1\part1-schematic1-test1.sim ] 
+
+** Creating circuit file "part1-schematic1-test1.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 8s 0 0.01 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\part1-SCHEMATIC1.net" 
+
+
+.END

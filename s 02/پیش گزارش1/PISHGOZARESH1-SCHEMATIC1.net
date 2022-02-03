@@ -1,0 +1,5 @@
+* source PISHGOZARESH1
+R_R1         N00091 N00121  680  
+R_R2         N00121 N00148  1k  
+R_R3         N00148 0  5.6k  
+V_V1         N00091 0 15

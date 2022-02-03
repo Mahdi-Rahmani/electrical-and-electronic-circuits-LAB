@@ -1,0 +1,146 @@
+
+**** 01/21/21 11:54:35 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-test"  [ C:\USERS\M R\DESKTOP\AZ MADAR ELEC\s10\last\last-SCHEMATIC1-test.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "last-SCHEMATIC1-test.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 60ms 0 60u 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\last-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING last-SCHEMATIC1.net ****
+* source LAST
+X_U1         N00769 N00429 N00222 N000033 N00510 LM741
+V_V4         N00617 0  
++PULSE -2 2 0 1n 1n 5m 10m
+R_R3         0 N00769  150k  
+R_R1         N00617 N00429  150k  
+R_R2         N00429 N00510  150k  
+V_V1         0 N000033 9
+V_V2         N00222 0 9
+C_C1         N00429 N00510  100n  
+
+**** RESUMING last-SCHEMATIC1-test.sim.cir ****
+.END
+
+**** 01/21/21 11:54:35 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-test"  [ C:\USERS\M R\DESKTOP\AZ MADAR ELEC\s10\last\last-SCHEMATIC1-test.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.x_lm741.dx X_U1.x_lm741.dy 
+          IS  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03 
+         CJO                   10.000000E-12 
+
+
+**** 01/21/21 11:54:35 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-test"  [ C:\USERS\M R\DESKTOP\AZ MADAR ELEC\s10\last\last-SCHEMATIC1-test.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.x_lm741.qx 
+               NPN             
+          IS  800.000000E-18 
+          BF   93.75         
+          NF    1            
+          BR    1            
+          NR    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 01/21/21 11:54:35 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-test"  [ C:\USERS\M R\DESKTOP\AZ MADAR ELEC\s10\last\last-SCHEMATIC1-test.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00222)    9.0000 (N00429)    -.0120 (N00510)    1.9881 (N00617)   -2.0000     
+
+(N00769)    -.0120 (N000033)   -9.0000                                          
+
+(X_U1.x_lm741.6)-187.6E-06            (X_U1.x_lm741.7)    1.9887                
+
+(X_U1.x_lm741.8)    1.9887            (X_U1.x_lm741.9)    0.0000                
+
+(X_U1.x_lm741.10)    -.6196           (X_U1.x_lm741.11)    8.9603               
+
+(X_U1.x_lm741.12)    8.9603           (X_U1.x_lm741.13)    -.6057               
+
+(X_U1.x_lm741.14)    -.6058           (X_U1.x_lm741.53)    8.0000               
+
+(X_U1.x_lm741.54)   -8.0000           (X_U1.x_lm741.90)     .0133               
+
+(X_U1.x_lm741.91)   40.0000           (X_U1.x_lm741.92)  -40.0000               
+
+(X_U1.x_lm741.99)    0.0000           
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V4         1.325E-05
+    V_V1        -1.006E-03
+    V_V2        -1.006E-03
+    X_U1.x_lm741.vb  -1.876E-09
+    X_U1.x_lm741.vc   6.013E-12
+    X_U1.x_lm741.ve   1.000E-11
+    X_U1.x_lm741.vlim   1.333E-05
+    X_U1.x_lm741.vlp  -3.999E-11
+    X_U1.x_lm741.vln  -4.002E-11
+
+    TOTAL POWER DISSIPATION   1.81E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .13
+

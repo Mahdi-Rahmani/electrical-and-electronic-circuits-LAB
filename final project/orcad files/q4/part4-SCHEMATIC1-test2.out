@@ -1,0 +1,56 @@
+
+**** 02/07/21 14:14:10 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-test2"  [ C:\USERS\M R\DESKTOP\AZ MADAR ELEC\elec project\q4\part4-SCHEMATIC1-test2.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "part4-SCHEMATIC1-test2.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM a 10m 50m 5m 
++ LIN PARAM b 10m 50m 5m 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\part4-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING part4-SCHEMATIC1.net ****
+* source PART4
+R_R2         0 N00702  10  
+C_C1         N00591 N00491  {a}  
+V_V3         N00553 0  
++SIN 2 6 0.6366 0 0 0
+C_C2         0 N00325  {b}  
+L_L1         N00702 N00325  2H  
+E_E1         N02360 0 N00325 0 0.5
+R_R1         N00553 N00591  4  
+X_F1    N00491 N02360 N00702 0 SCHEMATIC1_F1 
+.PARAM  a=10m b=10m
+
+.subckt SCHEMATIC1_F1 1 2 3 4  
+F_F1         3 4 VF_F1 4
+VF_F1         1 2 0V
+.ends SCHEMATIC1_F1
+
+**** RESUMING part4-SCHEMATIC1-test2.sim.cir ****
+.END
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

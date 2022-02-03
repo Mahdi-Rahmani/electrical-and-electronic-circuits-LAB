@@ -1,0 +1,17 @@
+** Profile: "SCHEMATIC1-test"  [ C:\USERS\M R\DESKTOP\AZ MADAR ELEC\6\S06\azmayesh 2\68\az2-SCHEMATIC1-test.sim ] 
+
+** Creating circuit file "az2-SCHEMATIC1-test.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 0.2ms 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\az2-SCHEMATIC1.net" 
+
+
+.END

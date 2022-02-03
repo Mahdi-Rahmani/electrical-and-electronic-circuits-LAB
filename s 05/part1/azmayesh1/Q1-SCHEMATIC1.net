@@ -1,0 +1,5 @@
+* source Q1
+V_V1         N00417 0  
++PULSE 2 -2 0 1n 1n 15m 30m
+R_R1         N00417 N00530  10k  
+C_C1         0 N00530  100n  

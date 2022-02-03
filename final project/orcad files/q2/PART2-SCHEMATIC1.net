@@ -1,0 +1,14 @@
+* source PART2
+R_R2         0 N00702  10  
+C_C1         N00591 N00491  20m  
+C_C2         0 N00325  25m  
+V_V2         N00553 0 DC 0Vdc AC 6Vac 
+L_L1         N00702 N00325  2H  
+E_E1         N02360 0 N00325 0 0.5
+R_R1         N00553 N00591  4  
+X_F1    N00491 N02360 N00702 0 SCHEMATIC1_F1 
+
+.subckt SCHEMATIC1_F1 1 2 3 4  
+F_F1         3 4 VF_F1 4
+VF_F1         1 2 0V
+.ends SCHEMATIC1_F1
